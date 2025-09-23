@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Sassaki - Schaefer Barcos Novos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(27, 104, 119, 0.7), rgba(36, 132, 151, 0.4)), url("https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg {
+                background-attachment: scroll;
+            }
+        }
+
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+        }
+
+        .title-shadow {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .title-shadow-two {
+            text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <header class="bg-slate-700 text-white">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="text-2xl font-bold">
+                        <span class="text-white">P</span><span class="text-teal-400">S</span>
+                    </div>
+                    <div>
+                        <div class="text-lg font-bold tracking-wide">PAULO SASSAKI</div>
+                        <div class="text-xs text-gray-300 italic">Yacht Broker</div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-teal-400 transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-teal-400 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+
+                <button id="menuBtn"
+                    class="flex items-center space-x-2 text-white hover:text-teal-400 transition-colors">
+                    <span class="text-sm font-medium">MENU</span>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="hidden bg-slate-800 text-white">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="text-white hover:text-teal-400 transition-colors">
+                    <i class="fab fa-facebook-f mr-2"></i> Facebook
+                </a>
+                <a href="#" class="text-white hover:text-teal-400 transition-colors">
+                    <i class="fab fa-instagram mr-2"></i> Instagram
+                </a>
+                <a href="#" class="text-white hover:text-teal-400 transition-colors">Contato</a>
+                <a href="#" class="text-white hover:text-teal-400 transition-colors">Sobre</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 md:h-[500px] flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-wider title-shadow-two">
+                SCHAEFER - BARCOS NOVOS
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl font-light max-w-2xl mx-auto title-shadow-two">
+                Confira a nossa relação de barcos selecionados!
+            </p>
+        </div>
+    </section>
+
+    <!-- Boats Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-sm">
+                    <div class="aspect-[16/10]">
+                        <img src="https://static.wixstatic.com/media/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg"
+                            alt="Schaefer 830" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#133349] text-center">SCHAEFER 830</h3>
+
+                        <div class="w-44 h-0.5 bg-[#3AC8DC] mx-auto my-3"></div>
+
+                        <p class="text-[#133349] font-normal text-center mb-6">3 X VOLVO IPS 1200</p>
+
+                        <div class="grid grid-cols-3 text-center text-slate-700 text-sm font-semibold">
+                            <div>
+                                <p class="text-[#133349] font-normal uppercase tracking-wide">Ano</p>
+                                <p class="text-[#133349] font-normal">2014</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Preço</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">SOB CONSULTA</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-sm">
+                    <div class="aspect-[16/10]">
+                        <img src="https://static.wixstatic.com/media/76f07b_d48fd3724ca744838ab3beabecaf56e0~mv2.jpg/v1/fit/w_906,h_779,q_90,enc_avif,quality_auto/76f07b_d48fd3724ca744838ab3beabecaf56e0~mv2.jpg"
+                            alt="Schaefer 830" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#133349] text-center">SCHAEFER 770</h3>
+
+                        <div class="w-44 h-0.5 bg-[#3AC8DC] mx-auto my-3"></div>
+
+                        <p class="text-[#133349] font-normal text-center mb-6">3 X VOLVO IPS 1200</p>
+
+                        <div class="grid grid-cols-3 text-center text-slate-700 text-sm font-semibold">
+                            <div>
+                                <p class="text-[#133349] font-normal uppercase tracking-wide">Ano</p>
+                                <p class="text-[#133349] font-normal">2014</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Preço</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">SOB CONSULTA</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-sm">
+                    <div class="aspect-[16/10]">
+                        <img src="https://static.wixstatic.com/media/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg"
+                            alt="Schaefer 830" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#133349] text-center">FERRETTI 75</h3>
+
+                        <div class="w-44 h-0.5 bg-[#3AC8DC] mx-auto my-3"></div>
+
+                        <p class="text-[#133349] font-normal text-center mb-6">3 X VOLVO IPS 1200</p>
+
+                        <div class="grid grid-cols-3 text-center text-slate-700 text-sm font-semibold">
+                            <div>
+                                <p class="text-[#133349] font-normal uppercase tracking-wide">Ano</p>
+                                <p class="text-[#133349] font-normal">2014</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Preço</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">SOB CONSULTA</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-sm">
+                    <div class="aspect-[16/10]">
+                        <img src="https://static.wixstatic.com/media/76f07b_c42d6f1aa5dd4b41bf15e1072b6da3bf~mv2.jpg/v1/fill/w_788,h_452,al_c,lg_1,q_80,enc_auto/76f07b_c42d6f1aa5dd4b41bf15e1072b6da3bf~mv2.jpg"
+                            alt="Schaefer 830" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#133349] text-center">SCHAEFER 660</h3>
+
+                        <div class="w-44 h-0.5 bg-[#3AC8DC] mx-auto my-3"></div>
+
+                        <p class="text-[#133349] font-normal text-center mb-6">3 X VOLVO IPS 1200</p>
+
+                        <div class="grid grid-cols-3 text-center text-slate-700 text-sm font-semibold">
+                            <div>
+                                <p class="text-[#133349] font-normal uppercase tracking-wide">Ano</p>
+                                <p class="text-[#133349] font-normal">2014</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Preço</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">SOB CONSULTA</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-sm">
+                    <div class="aspect-[16/10]">
+                        <img src="https://static.wixstatic.com/media/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg"
+                            alt="Schaefer 830" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#133349] text-center">SCHAEFER 830</h3>
+
+                        <div class="w-44 h-0.5 bg-[#3AC8DC] mx-auto my-3"></div>
+
+                        <p class="text-[#133349] font-normal text-center mb-6">3 X VOLVO IPS 1200</p>
+
+                        <div class="grid grid-cols-3 text-center text-slate-700 text-sm font-semibold">
+                            <div>
+                                <p class="text-[#133349] font-normal uppercase tracking-wide">Ano</p>
+                                <p class="text-[#133349] font-normal">2014</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Preço</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">SOB CONSULTA</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 max-w-sm">
+                    <div class="aspect-[16/10]">
+                        <img src="https://static.wixstatic.com/media/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg"
+                            alt="Schaefer 830" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#133349] text-center">SCHAEFER 830</h3>
+
+                        <div class="w-44 h-0.5 bg-[#3AC8DC] mx-auto my-3"></div>
+
+                        <p class="text-[#133349] font-normal text-center mb-6">3 X VOLVO IPS 1200</p>
+
+                        <div class="grid grid-cols-3 text-center text-slate-700 text-sm font-semibold">
+                            <div>
+                                <p class="text-[#133349] font-normal uppercase tracking-wide">Ano</p>
+                                <p class="text-[#133349] font-normal">2014</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
+                            </div>
+                            <div class="border-l-2 border-[#3AC8DC]">
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Preço</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal">SOB CONSULTA</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-blue-100 py-10 max-w-7xl clip-slant min-h-[100px]"></div>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-32">
+                    <div class="text-center lg:text-end lg:mr-10">
+                        <h2 class="text-xl ml-28 md:text-7xl lg:text-4xl font-bold text-slate-700 leading-none title-shadow">
+                            SCHAEFER<br>
+                            <span class="text-slate-800 text-8xl mr-3">830</span>
+                        </h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-cyan-400 pl-8 h-72">
+                            <p class="text-gray-700 leading-relaxed">
+                                Qualidade e sofisticação se encontram neste iate exclusivo.
+                                Seu amplo espaço interno, totalmente personalizável, integra
+                                todas as áreas de convívio, com acabamento primoroso em
+                                cada detalhe.
+                            </p>
+
+                            <br>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                Sua excelente navegabilidade, com 3 motores garante
+                                autonomia, velocidade e conforto.
+                            </p>
+
+                            <br>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                Venha conhecer esta combinação de experiência e paixão na
+                                Schaefer 25M e embarque em um novo padrão de estilo de
+                                vida no mar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div x-data="{            
+                        slides: [                
+                            {
+                                imgSrc: 'https://static.wixstatic.com/media/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_c486dbcbf12846bda78a0f3141506d1e~mv2.jpg',
+                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
+                            },            
+                        ],            
+                        currentSlideIndex: 1,
+                        previous() {                
+                            if (this.currentSlideIndex > 1) {                    
+                                this.currentSlideIndex = this.currentSlideIndex - 1                
+                            } else {   
+                                this.currentSlideIndex = this.slides.length                
+                            }            
+                        },            
+                        next() {                
+                            if (this.currentSlideIndex < this.slides.length) {                    
+                                this.currentSlideIndex = this.currentSlideIndex + 1                
+                            } else {                 
+                                this.currentSlideIndex = 1                
+                            }            
+                        },        
+                    }" class="relative w-full overflow-hidden">
+
+                    <button type="button"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="previous slide" x-on:click="previous()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button type="button"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="next slide" x-on:click="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="relative min-h-[50svh] w-full">
+                        <template x-for="(slide, index) in slides">
+                            <div x-show="currentSlideIndex == index + 1" class="absolute inset-0"
+                                x-transition.opacity.duration.700ms>
+                                <img class="absolute w-full h-full inset-0 object-cover" x-bind:src="slide.imgSrc"
+                                    x-bind:alt="slide.imgAlt" />
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+                        <template x-for="(slide, index) in slides">
+                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                                x-bind:class="currentSlideIndex === index + 1 
+                                            ? 'bg-gray-800' 
+                                            : 'bg-gray-400'">
+                            </button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
+        <div class='absolute inset-0 flex items-center justify-between'>
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+        </div>
+
+        <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
+            ESPECIFICAÇÕES
+        </h2>
+    </div>
+
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div>
+                    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center py-10">
+                        <div class="text-center lg:text-end">
+                            <div class="lg:mr-3">
+                                <h2 class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow">
+                                    DOWNLOAD<br>
+                                    <span
+                                        class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow lg:mr-3">CATÁLOGO</span>
+                                </h2>
+                            </div>
+
+                            <div class="mt-10">
+                                <a href="#"
+                                    class="inline-block bg-[#18BFD6] rounded-3xl text-white py-3 px-12 lg:px-28 hover:bg-[#54D4E5] transition-colors duration-300 font-medium">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hidden lg:flex flex-col h-80 w-2">
+                            <div class="h-1/2 bg-[#133349]"></div>
+
+                            <div class="h-1/2 bg-cyan-400"></div>
+                        </div>
+                        <div>
+                            <ul class="leading-relaxed text-gray-700 font-semibold text-center lg:text-left">
+                                <li class="pb-2 text-[#133349]">Comprimento máximo: 24,75 m (81,2 ft)</li>
+                                <li class="pb-2 text-[#133349]">Boca máxima: 6,13 m (20,1 ft)</li>
+                                <li class="pb-2 text-[#133349]">Calado máximo: 1,77 m (5,8 ft)</li>
+                                <li class="pb-2 text-[#133349]">Deslocamento leve: 51.200 kg (112,876 lbs)</li>
+                                <li class="pb-2 text-[#133349]">Ângulo V na popa: 14,7º</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de água doce: 1.200 L (317 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível: 4.700 l (1.242 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Lotação máxima: 21</li>
+                                <li class="pb-2 text-[#133349]">Lotação noite: 9+3</li>
+                                <li class="pb-2 text-[#133349]">Designer: Marcio Schaefer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="py-10 mb-28">
+                        <h2 class="text-center text-2xl md:text-3xl font-bold text-[#133349] mb-8">
+                            ORÇAMENTO
+                        </h2>
+
+                        <div
+                            class="bg-[#E0F4FA] max-w-4xl mx-auto p-6 md:p-8 flex flex-col sm:flex-row items-center text-center sm:text-left rounded-md mb-10">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="w-20 h-20 text-[#133349]" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 sm:mt-0 sm:ml-6">
+                                <h3 class="text-xl font-semibold text-[#133349]">Atendimento</h3>
+                                <p class="text-[#133349] text-sm mt-2 leading-relaxed">
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative flex items-center w-full">
+        <div class="h-3 w-full bg-slate-700">
+            <div class="absolute flex justify-center items-center w-full">
+                <div class="h-3 w-1/3 bg-cyan-400"></div>
+
+                <div class="absolute h-3 w-1/3 bg-cyan-400"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-28">
+                    <div class="text-center lg:text-right lg:pr-8">
+                        <h2 class="text-4xl ml-28 md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
+                            SCHAEFER<br>
+                            <span class="text-slate-800 text-8xl mr-10">770</span>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
+                            <p class="text-gray-700 font-semibold leading-relaxed">
+                                A Schaefer 510 GT traz uma elegante combinação dos espaços
+                                internos, sofisticação e design. Com a equipe de engenharia própria e
+                                a tecnologia de ponta em construção da Schaefer Yachts, trouxemos
+                                espaço extra na cabine principal e na suite master, tornando o maior
+                                barco da categoria mais confortável ainda.
+                            </p>
+
+                            <p class="text-gray-700 font-semibold leading-relaxed">
+                                Sendo a única da categoria que dispõe de 3 suítes, a Schaefer 510 GT
+                                tem proporções maiores do que entrega. Com 3 opções de layout,
+                                você encontra a inclusão de recursos normalmente possíveis em
+                                embarcações maiores
+                            </p>
+
+                            <p class="text-gray-700 font-semibold leading-relaxed">
+                                Com uma arquitetura meticulosa, a Schaefer Yachts traz o que há de
+                                melhor no mundo náutico em uma embarcação nacional. Uma
+                                experiência excepcional na água, combinado com um design icônico,
+                                engenharia incomparável e uma extraordinária habilidade para criar
+                                momentos inesquecíveis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div x-data="{            
+                        slides: [                
+                            {
+                                imgSrc: 'https://static.wixstatic.com/media/76f07b_d48fd3724ca744838ab3beabecaf56e0~mv2.jpg/v1/fit/w_906,h_779,q_90,enc_avif,quality_auto/76f07b_d48fd3724ca744838ab3beabecaf56e0~mv2.jpg',
+                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://static.wixstatic.com/media/76f07b_51320af02a9548cb87fda4a9f72015fc~mv2.jpg/v1/fit/w_906,h_779,q_90,enc_avif,quality_auto/76f07b_51320af02a9548cb87fda4a9f72015fc~mv2.jpg',                    
+                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://static.wixstatic.com/media/76f07b_eb9607fe16d248e7ae5634f211c20873~mv2.jpg/v1/fit/w_906,h_779,q_90,enc_avif,quality_auto/76f07b_eb9607fe16d248e7ae5634f211c20873~mv2.jpg',                    
+                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
+                            },            
+                        ],            
+                        currentSlideIndex: 1,
+                        previous() {                
+                            if (this.currentSlideIndex > 1) {                    
+                                this.currentSlideIndex = this.currentSlideIndex - 1                
+                            } else {   
+                                this.currentSlideIndex = this.slides.length                
+                            }            
+                        },            
+                        next() {                
+                            if (this.currentSlideIndex < this.slides.length) {                    
+                                this.currentSlideIndex = this.currentSlideIndex + 1                
+                            } else {                 
+                                this.currentSlideIndex = 1                
+                            }            
+                        },        
+                    }" class="relative w-full overflow-hidden">
+
+                    <button type="button"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="previous slide" x-on:click="previous()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button type="button"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="next slide" x-on:click="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="relative min-h-[50svh] w-full">
+                        <template x-for="(slide, index) in slides">
+                            <div x-show="currentSlideIndex == index + 1" class="absolute inset-0"
+                                x-transition.opacity.duration.700ms>
+                                <img class="absolute w-full h-full inset-0 object-cover" x-bind:src="slide.imgSrc"
+                                    x-bind:alt="slide.imgAlt" />
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+                        <template x-for="(slide, index) in slides">
+                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                                x-bind:class="currentSlideIndex === index + 1 
+                                            ? 'bg-gray-800' 
+                                            : 'bg-gray-400'">
+                            </button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
+        <div class='absolute inset-0 flex items-center justify-between'>
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+        </div>
+
+        <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
+            ESPECIFICAÇÕES
+        </h2>
+    </div>
+
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div>
+                    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center py-10">
+                        <div class="text-center lg:text-end">
+                            <div class="lg:mr-3">
+                                <h2 class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow">
+                                    DOWNLOAD<br>
+                                    <span
+                                        class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow lg:mr-3">CATÁLOGO</span>
+                                </h2>
+                            </div>
+
+                            <div class="mt-10">
+                                <a href="#"
+                                    class="inline-block bg-[#18BFD6] rounded-3xl text-white py-3 px-12 lg:px-28 hover:bg-[#54D4E5] transition-colors duration-300 font-medium">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hidden lg:flex flex-col h-80 w-2">
+                            <div class="h-1/2 bg-[#133349]"></div>
+
+                            <div class="h-1/2 bg-cyan-400"></div>
+                        </div>
+                        <div>
+                            <ul class="leading-relaxed text-gray-700 font-semibold text-center lg:text-left">
+                                <li class="pb-2 text-[#133349]">Comprimento máximo: 15,82 m (51,9 ft)</li>
+                                <li class="pb-2 text-[#133349]">Boca máxima: 4,36 m (14,3 ft)</li>
+                                <li class="pb-2 text-[#133349]">Calado máximo: 1,26 m (4,1 ft)</li>
+                                <li class="pb-2 text-[#133349]">Deslocamento leve: 18.300 kg (44.344 lbs)</li>
+                                <li class="pb-2 text-[#133349]">Ângulo V na popa: 17º</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de água doce: 470 l (124 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível: 1.300 l (343 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Lotação máxima: 16</li>
+                                <li class="pb-2 text-[#133349]">Lotação / noite: 6+1</li>
+                                <li class="pb-2 text-[#133349]">Designer: Marcio Schaefer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="py-10 mb-28">
+                        <h2 class="text-center text-2xl md:text-3xl font-bold text-[#133349] mb-8">
+                            ORÇAMENTO
+                        </h2>
+
+                        <div
+                            class="bg-[#E0F4FA] max-w-4xl mx-auto p-6 md:p-8 flex flex-col sm:flex-row items-center text-center sm:text-left rounded-md mb-10">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="w-20 h-20 text-[#133349]" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 sm:mt-0 sm:ml-6">
+                                <h3 class="text-xl font-semibold text-[#133349]">Atendimento</h3>
+                                <p class="text-[#133349] text-sm mt-2 leading-relaxed">
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative flex items-center w-full">
+        <div class="h-3 w-full bg-slate-700">
+            <div class="absolute flex justify-center items-center w-full">
+                <div class="h-3 w-1/3 bg-cyan-400"></div>
+
+                <div class="absolute h-3 w-1/3 bg-cyan-400"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-28">
+                    <div class="text-center lg:text-right lg:pr-8">
+                        <h2 class="text-4xl ml-32 md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
+                            FERRETTI<br>
+                            <span class="text-slate-800 text-8xl mr-12">75</span>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
+                            <p class="text-gray-700 leading-relaxed">
+                                A Phantom 400 é um barco consagrado no mercado náutico pelo seu
+                                design único e sua agilidade e velocidade. Agora o seu novo visual vai
+                                fazer você se encantar em um piscar de olhos.
+                            </p>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                O modelo traz um hard top exclusivo em sua categoria, e sua
+                                generosa plataforma com espaço gourmet reforça a tradição da
+                                Schaefer Yachts de privilegiar o espaço externo.
+                            </p>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                Com o alto pé direito das cabines, e a única da categoria com duas
+                                suítes, você confere o conforto e requinte que tornam a Phantom 400
+                                uma extensão da sua própria casa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div x-data="{            
+                        slides: [                
+                            {
+                                imgSrc: 'https://static.wixstatic.com/media/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg',
+                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
+                            },            
+                        ],            
+                        currentSlideIndex: 1,
+                        previous() {                
+                            if (this.currentSlideIndex > 1) {                    
+                                this.currentSlideIndex = this.currentSlideIndex - 1                
+                            } else {   
+                                this.currentSlideIndex = this.slides.length                
+                            }            
+                        },            
+                        next() {                
+                            if (this.currentSlideIndex < this.slides.length) {                    
+                                this.currentSlideIndex = this.currentSlideIndex + 1                
+                            } else {                 
+                                this.currentSlideIndex = 1                
+                            }            
+                        },        
+                    }" class="relative w-full overflow-hidden">
+
+                    <button type="button"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="previous slide" x-on:click="previous()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button type="button"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="next slide" x-on:click="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="relative min-h-[50svh] w-full">
+                        <template x-for="(slide, index) in slides">
+                            <div x-show="currentSlideIndex == index + 1" class="absolute inset-0"
+                                x-transition.opacity.duration.700ms>
+                                <img class="absolute w-full h-full inset-0 object-cover" x-bind:src="slide.imgSrc"
+                                    x-bind:alt="slide.imgAlt" />
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+                        <template x-for="(slide, index) in slides">
+                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                                x-bind:class="currentSlideIndex === index + 1 
+                                            ? 'bg-gray-800' 
+                                            : 'bg-gray-400'">
+                            </button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
+        <div class='absolute inset-0 flex items-center justify-between'>
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+        </div>
+
+        <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
+            ESPECIFICAÇÕES
+        </h2>
+    </div>
+
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div>
+                    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center py-10 ">
+                        <div class="text-center lg:text-end">
+                            <div class="lg:mr-3">
+                                <h2 class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow">
+                                    DOWNLOAD<br>
+                                    <span
+                                        class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow lg:mr-3">CATÁLOGO</span>
+                                </h2>
+                            </div>
+
+                            <div class="mt-10">
+                                <a href="#"
+                                    class="inline-block bg-[#18BFD6] rounded-3xl text-white py-3 px-12 lg:px-28 hover:bg-[#54D4E5] transition-colors duration-300 font-medium">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hidden lg:flex flex-col h-96 w-2">
+                            <div class="h-1/2 bg-[#133349]"></div>
+
+                            <div class="h-1/2 bg-cyan-400"></div>
+                        </div>
+                        <div>
+                            <ul class="leading-relaxed text-gray-700 font-semibold text-center lg:text-left">
+                                <li class="pb-2 text-[#133349]">Comprimento máximo: 12,25 m (40,2 ft)</li>
+                                <li class="pb-2 text-[#133349]">Boca máxima: 3,88 m (12,7 ft)</li>
+                                <li class="pb-2 text-[#133349]">Calado máximo: 1,09 m (3,06 ft)</li>
+                                <li class="pb-2 text-[#133349]">Deslocamento leve: 9.500 kg (20.944 lbs)</li>
+                                <li class="pb-2 text-[#133349]">Ângulo V na popa: 17,4º</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de água doce: 250 L (66 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível (motor centro): 800 L (211 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível (motor popa): 1050 L (277 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Lotação máxima: 14</li>
+                                <li class="pb-2 text-[#133349]">Lotação noite: 5</li>
+                                <li class="pb-2 text-[#133349]">Designer: Marcio Schaefer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="py-10 mb-28">
+                        <h2 class="text-center text-2xl md:text-3xl font-bold text-[#133349] mb-8">
+                            ORÇAMENTO
+                        </h2>
+
+                        <div
+                            class="bg-[#E0F4FA] max-w-4xl mx-auto p-6 md:p-8 flex flex-col sm:flex-row items-center text-center sm:text-left rounded-md mb-10">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="w-20 h-20 text-[#133349]" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 sm:mt-0 sm:ml-6">
+                                <h3 class="text-xl font-semibold text-[#133349]">Atendimento</h3>
+                                <p class="text-[#133349] text-sm mt-2 leading-relaxed">
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative flex items-center w-full">
+        <div class="h-3 w-full bg-slate-700">
+            <div class="absolute flex justify-center items-center w-full">
+                <div class="h-3 w-1/3 bg-cyan-400"></div>
+
+                <div class="absolute h-3 w-1/3 bg-cyan-400"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-28">
+                    <div class="text-center ml-28 lg:text-right lg:pr-8">
+                        <h2 class="text-4xl md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
+                            SCHAEFER<br>
+                            <span class="text-slate-800 text-8xl mr-12">660</span>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
+                            <p class="text-gray-700 leading-relaxed">
+                                A combinação de design e sofisticação agora está mais perto de você. A
+                                New Schaefer 375 oferece a qualidade desenvolvida em toda a nossa
+                                linha de iates, com soluções tecnológicas e inovações únicas em sua
+                                categoria.
+                            </p>
+
+                            <p class="text-gray-700 leading-relaxed">
+                                Com duas varandas retráteis, maior espaço na praça de popa
+                                totalmente integrada ao cockpit, interior aconchegante com 1,90m de
+                                pé direito e exclusiva passagem interna com acesso à proa da
+                                embarcação, a New Schaefer 375 chega ao mercado pronta para
+                                conquistar você que não abre mão do design, conforto, segurança e
+                                toda a qualidade que somente a Schaefer Yachts pode proporcionar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div x-data="{            
+                        slides: [                
+                            {
+                                imgSrc: 'https://static.wixstatic.com/media/76f07b_c42d6f1aa5dd4b41bf15e1072b6da3bf~mv2.jpg/v1/fill/w_788,h_452,al_c,lg_1,q_80,enc_auto/76f07b_c42d6f1aa5dd4b41bf15e1072b6da3bf~mv2.jpg',
+                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
+                            },            
+                        ],            
+                        currentSlideIndex: 1,
+                        previous() {                
+                            if (this.currentSlideIndex > 1) {                    
+                                this.currentSlideIndex = this.currentSlideIndex - 1                
+                            } else {   
+                                this.currentSlideIndex = this.slides.length                
+                            }            
+                        },            
+                        next() {                
+                            if (this.currentSlideIndex < this.slides.length) {                    
+                                this.currentSlideIndex = this.currentSlideIndex + 1                
+                            } else {                 
+                                this.currentSlideIndex = 1                
+                            }            
+                        },        
+                    }" class="relative w-full overflow-hidden">
+
+                    <button type="button"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="previous slide" x-on:click="previous()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button type="button"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="next slide" x-on:click="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="relative min-h-[50svh] w-full">
+                        <template x-for="(slide, index) in slides">
+                            <div x-show="currentSlideIndex == index + 1" class="absolute inset-0"
+                                x-transition.opacity.duration.700ms>
+                                <img class="absolute w-full h-full inset-0 object-cover" x-bind:src="slide.imgSrc"
+                                    x-bind:alt="slide.imgAlt" />
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+                        <template x-for="(slide, index) in slides">
+                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                                x-bind:class="currentSlideIndex === index + 1 
+                                            ? 'bg-gray-800' 
+                                            : 'bg-gray-400'">
+                            </button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
+        <div class='absolute inset-0 flex items-center justify-between'>
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+        </div>
+
+        <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
+            ESPECIFICAÇÕES
+        </h2>
+    </div>
+
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div>
+                    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center py-10">
+                        <div class="text-center lg:text-end">
+                            <div class="lg:mr-3">
+                                <h2 class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow">
+                                    DOWNLOAD<br>
+                                    <span
+                                        class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow lg:mr-3">CATÁLOGO</span>
+                                </h2>
+                            </div>
+
+                            <div class="mt-10">
+                                <a href="#"
+                                    class="inline-block bg-[#18BFD6] rounded-3xl text-white py-3 px-12 lg:px-28 hover:bg-[#54D4E5] transition-colors duration-300 font-medium">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hidden lg:flex flex-col h-96 w-2">
+                            <div class="h-1/2 bg-[#133349]"></div>
+
+                            <div class="h-1/2 bg-cyan-400"></div>
+                        </div>
+                        <div>
+                            <ul class="leading-relaxed text-gray-700 font-semibold text-center lg:text-left">
+                                <li class="pb-2 text-[#133349]">Comprimento máximo: 11,43 m (37,5 ft)</li>
+                                <li class="pb-2 text-[#133349]">Boca máxima: 3,65 m (11,98 ft)</li>
+                                <li class="pb-2 text-[#133349]">Calado de casco: 0,82 m (2,69 ft)</li>
+                                <li class="pb-2 text-[#133349]">Deslocamento: 7.900 kg (17,400 lb)</li>
+                                <li class="pb-2 text-[#133349]">Ângulo V na popa: 18°</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de água doce: 300 L (79 gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível: 1.050 L (277 gal)</li>
+                                <li class="pb-2 text-[#133349]">Lotação máxima: 14</li>
+                                <li class="pb-2 text-[#133349]">Lotação / noite: 4</li>
+                                <li class="pb-2 text-[#133349]">Designer: Marcio Schaefer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="py-10 mb-28">
+                        <h2 class="text-center text-2xl md:text-3xl font-bold text-[#133349] mb-8">
+                            ORÇAMENTO
+                        </h2>
+
+                        <div
+                            class="bg-[#E0F4FA] max-w-4xl mx-auto p-6 md:p-8 flex flex-col sm:flex-row items-center text-center sm:text-left rounded-md mb-10">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="w-20 h-20 text-[#133349]" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 sm:mt-0 sm:ml-6">
+                                <h3 class="text-xl font-semibold text-[#133349]">Atendimento</h3>
+                                <p class="text-[#133349] text-sm mt-2 leading-relaxed">
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative flex items-center w-full">
+        <div class="h-3 w-full bg-slate-700">
+            <div class="absolute flex justify-center items-center w-full">
+                <div class="h-3 w-1/3 bg-cyan-400"></div>
+
+                <div class="absolute h-3 w-1/3 bg-cyan-400"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-28">
+                    <div class="text-center ml-28 lg:text-right lg:pr-8">
+                        <h2 class="text-4xl md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
+                            FERRETTI<br>
+                            <span class="text-slate-800 text-8xl mr-12">75</span>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
+                            <p class="text-gray-700 leading-relaxed">
+                               A nova Schaefer V33 é um walk-around de 33 pés, contemporâneo e
+                               esportivo, alinhada com o que há de mais moderno nos mercados
+                               americano e europeu, e totalmente adaptada para o Brasil. Com
+                               opção de motor centro rabeta a diesel, ou uma parelha de motores de
+                               popa de 300hp, a Schaefer V33 é uma embarcação que privilegia as
+                               áreas externas, com sua proa aberta e amplo espaço na praça de
+                               popa, sem perder a comodidade de uma cabine para duas pessoas
+                               pernoitarem com conforto. Para curtir com a família, pescar com
+                               amigos, praticar esportes, passar o dia ou o fim de semana, a Schaefer
+                               V33 é um barco pronto para qualquer atividade no mar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div x-data="{            
+                        slides: [                
+                            {
+                                imgSrc: 'https://images.unsplash.com/photo-1592437111271-239fa8dcb401?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
+                            },            
+                        ],            
+                        currentSlideIndex: 1,
+                        previous() {                
+                            if (this.currentSlideIndex > 1) {                    
+                                this.currentSlideIndex = this.currentSlideIndex - 1                
+                            } else {   
+                                this.currentSlideIndex = this.slides.length                
+                            }            
+                        },            
+                        next() {                
+                            if (this.currentSlideIndex < this.slides.length) {                    
+                                this.currentSlideIndex = this.currentSlideIndex + 1                
+                            } else {                 
+                                this.currentSlideIndex = 1                
+                            }            
+                        },        
+                    }" class="relative w-full overflow-hidden">
+
+                    <button type="button"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="previous slide" x-on:click="previous()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button type="button"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="next slide" x-on:click="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="relative min-h-[50svh] w-full">
+                        <template x-for="(slide, index) in slides">
+                            <div x-show="currentSlideIndex == index + 1" class="absolute inset-0"
+                                x-transition.opacity.duration.700ms>
+                                <img class="absolute w-full h-full inset-0 object-cover" x-bind:src="slide.imgSrc"
+                                    x-bind:alt="slide.imgAlt" />
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+                        <template x-for="(slide, index) in slides">
+                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                                x-bind:class="currentSlideIndex === index + 1 
+                                            ? 'bg-gray-800' 
+                                            : 'bg-gray-400'">
+                            </button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
+        <div class='absolute inset-0 flex items-center justify-between'>
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+        </div>
+
+        <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
+            ESPECIFICAÇÕES
+        </h2>
+    </div>
+
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div>
+                    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center py-10">
+                        <div class="text-center lg:text-end">
+                            <div class="lg:mr-3">
+                                <h2 class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow">
+                                    DOWNLOAD<br>
+                                    <span
+                                        class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow lg:mr-3">CATÁLOGO</span>
+                                </h2>
+                            </div>
+
+                            <div class="mt-10">
+                                <a href="#"
+                                    class="inline-block bg-[#18BFD6] rounded-3xl text-white py-3 px-12 lg:px-28 hover:bg-[#54D4E5] transition-colors duration-300 font-medium">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hidden lg:flex flex-col h-80 w-2">
+                            <div class="h-1/2 bg-[#133349]"></div>
+
+                            <div class="h-1/2 bg-cyan-400"></div>
+                        </div>
+                        <div>
+                            <ul class="leading-relaxed text-gray-700 font-semibold text-center lg:text-left">
+                                <li class="pb-2 text-[#133349]">Comprimento Máximo: 10,33 m (33 9 ft)</li>
+                                <li class="pb-2 text-[#133349]">Boca Máxima: 3,35 m (11 ft)</li>
+                                <li class="pb-2 text-[#133349]">Calado: 0,45 m (1 6 ft)</li>
+                                <li class="pb-2 text-[#133349]">Deslocamento leve: 4.950 kg (10.900 lbs)</li>
+                                <li class="pb-2 text-[#133349]">Ângulo V na popa: 18,9°</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de água doce: 150 l (40 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade combustível: 700 l (184 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Lotação máxima: 10</li>
+                                <li class="pb-2 text-[#133349]">Lotação noite: 2</li>
+                                <li class="pb-2 text-[#133349]">Designer: Marcio Schaefer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="py-10 mb-28">
+                        <h2 class="text-center text-2xl md:text-3xl font-bold text-[#133349] mb-8">
+                            ORÇAMENTO
+                        </h2>
+
+                        <div
+                            class="bg-[#E0F4FA] max-w-4xl mx-auto p-6 md:p-8 flex flex-col sm:flex-row items-center text-center sm:text-left rounded-md mb-10">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="w-20 h-20 text-[#133349]" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 sm:mt-0 sm:ml-6">
+                                <h3 class="text-xl font-semibold text-[#133349]">Atendimento</h3>
+                                <p class="text-[#133349] text-sm mt-2 leading-relaxed">
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative flex items-center w-full">
+        <div class="h-3 w-full bg-slate-700">
+            <div class="absolute flex justify-center items-center w-full">
+                <div class="h-3 w-1/3 bg-cyan-400"></div>
+
+                <div class="absolute h-3 w-1/3 bg-cyan-400"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-28">
+                    <div class="text-center ml-28 lg:text-right lg:pr-8">
+                        <h2 class="text-4xl md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
+                            SCHAEFER<br>
+                            <span class="text-slate-800 text-8xl mr-12">660</span>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
+                            <p class="text-gray-700 leading-relaxed">
+                               Dizem que nada é perfeito, que o ótimo é inimigo do bom, ou que nada é
+                               tão bom que não possa ser melhorado. Bom, nós entendemos um pouco
+                               diferente.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                               Chegou a nova Schaefer 510 GT, o que já era o melhor barco da categoria,
+                               acabou de ficar melhor ainda. Uma ampla suíte à meia-náu com 1,87m de
+                               pé direito traz o espaço e o conforto que você espera.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                               Escolha entre 3 suítes, uma ampla sala e uma cozinha extra no deck
+                               inferior da embarcação e sinta a satisfação em seus dias a bordo que
+                               somente uma Schaefer Yachts pode proporcionar.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                               Conheça a nova Schaefer 510 GT e embarque em um novo padrão de vida bordo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div x-data="{            
+                        slides: [                
+                            {
+                                imgSrc: 'https://images.unsplash.com/photo-1592437111271-239fa8dcb401?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
+                            },                
+                            {                    
+                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
+                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
+                            },            
+                        ],            
+                        currentSlideIndex: 1,
+                        previous() {                
+                            if (this.currentSlideIndex > 1) {                    
+                                this.currentSlideIndex = this.currentSlideIndex - 1                
+                            } else {   
+                                this.currentSlideIndex = this.slides.length                
+                            }            
+                        },            
+                        next() {                
+                            if (this.currentSlideIndex < this.slides.length) {                    
+                                this.currentSlideIndex = this.currentSlideIndex + 1                
+                            } else {                 
+                                this.currentSlideIndex = 1                
+                            }            
+                        },        
+                    }" class="relative w-full overflow-hidden">
+
+                    <button type="button"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="previous slide" x-on:click="previous()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button type="button"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center bg-white/70 rounded-full p-2 shadow hover:bg-white"
+                        aria-label="next slide" x-on:click="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+
+                    <div class="relative min-h-[50svh] w-full">
+                        <template x-for="(slide, index) in slides">
+                            <div x-show="currentSlideIndex == index + 1" class="absolute inset-0"
+                                x-transition.opacity.duration.700ms>
+                                <img class="absolute w-full h-full inset-0 object-cover" x-bind:src="slide.imgSrc"
+                                    x-bind:alt="slide.imgAlt" />
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+                        <template x-for="(slide, index) in slides">
+                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                                x-bind:class="currentSlideIndex === index + 1 
+                                            ? 'bg-gray-800' 
+                                            : 'bg-gray-400'">
+                            </button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
+        <div class='absolute inset-0 flex items-center justify-between'>
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+
+            <div class='h-full w-[30%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+        </div>
+
+        <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
+            ESPECIFICAÇÕES
+        </h2>
+    </div>
+
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div>
+                    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center py-10">
+                        <div class="text-center lg:text-end">
+                            <div class="lg:mr-3">
+                                <h2 class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow">
+                                    DOWNLOAD<br>
+                                    <span
+                                        class="text-4xl md:text-5xl font-bold text-[#133349] leading-none title-shadow lg:mr-3">CATÁLOGO</span>
+                                </h2>
+                            </div>
+
+                            <div class="mt-10">
+                                <a href="#"
+                                    class="inline-block bg-[#18BFD6] rounded-3xl text-white py-3 px-12 lg:px-28 hover:bg-[#54D4E5] transition-colors duration-300 font-medium">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hidden lg:flex flex-col h-80 w-2">
+                            <div class="h-1/2 bg-[#133349]"></div>
+
+                            <div class="h-1/2 bg-cyan-400"></div>
+                        </div>
+                        <div>
+                            <ul class="leading-relaxed text-gray-700 font-semibold text-center lg:text-left">
+                                <li class="pb-2 text-[#133349]">Comprimento máximo: 15,82 m (51,9 ft)</li>
+                                <li class="pb-2 text-[#133349]">Boca máxima: 4,36 m (14,3 ft)</li>
+                                <li class="pb-2 text-[#133349]">Calado máximo: 1,26 m (4,1 ft)</li>
+                                <li class="pb-2 text-[#133349]">Deslocamento leve: 18.300 kg (44.344 lbs)</li>
+                                <li class="pb-2 text-[#133349]">Ângulo V na popa: 17º</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de água doce: 470 l (124 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível: 1.300 l (343 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Lotação máxima: 16</li>
+                                <li class="pb-2 text-[#133349]">Lotação / noite: 6+1</li>
+                                <li class="pb-2 text-[#133349]">Designer: Pininfarina / Marcio Schaefer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="py-10 mb-28">
+                        <h2 class="text-center text-2xl md:text-3xl font-bold text-[#133349] mb-8">
+                            ORÇAMENTO
+                        </h2>
+
+                        <div
+                            class="bg-[#E0F4FA] max-w-4xl mx-auto p-6 md:p-8 flex flex-col sm:flex-row items-center text-center sm:text-left rounded-md mb-10">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="w-20 h-20 text-[#133349]" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 sm:mt-0 sm:ml-6">
+                                <h3 class="text-xl font-semibold text-[#133349]">Atendimento</h3>
+                                <p class="text-[#133349] text-sm mt-2 leading-relaxed">
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-700 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="text-2xl font-bold">
+                    <span class="text-white">P</span><span class="text-teal-400">S</span>
+                </div>
+                <div>
+                    <div class="text-lg font-bold tracking-wide">PAULO SASSAKI</div>
+                    <div class="text-xs text-gray-300 italic">Yacht Broker</div>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-white hover:text-teal-400 transition-colors">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal-400 transition-colors">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-300 text-sm">
+                © 2024 Paulo Sassaki Yacht Broker. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to hero background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-bg');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Boat card hover effects
+        document.querySelectorAll('.bg-white').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.transition = 'transform 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script> -->
+</body>
+
+</html>
