@@ -504,7 +504,7 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
                                 x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
@@ -518,9 +518,9 @@
 
     <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
         <div class='absolute inset-0 flex items-center justify-between'>
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
 
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
         </div>
 
         <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
@@ -649,20 +649,10 @@
                     </div>
                 </div>
                 <div x-data="{            
-                        slides: [                
-                            {
-                                imgSrc: 'https://static.wixstatic.com/media/76f07b_d48fd3724ca744838ab3beabecaf56e0~mv2.jpg/v1/fit/w_906,h_779,q_90,enc_avif,quality_auto/76f07b_d48fd3724ca744838ab3beabecaf56e0~mv2.jpg',
-                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://static.wixstatic.com/media/76f07b_51320af02a9548cb87fda4a9f72015fc~mv2.jpg/v1/fit/w_906,h_779,q_90,enc_avif,quality_auto/76f07b_51320af02a9548cb87fda4a9f72015fc~mv2.jpg',                    
-                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://static.wixstatic.com/media/76f07b_eb9607fe16d248e7ae5634f211c20873~mv2.jpg/v1/fit/w_906,h_779,q_90,enc_avif,quality_auto/76f07b_eb9607fe16d248e7ae5634f211c20873~mv2.jpg',                    
-                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
-                            },            
-                        ],            
+                        slides: Array.from({ length: 64 }, (_, i) => ({
+                            imgSrc: `src/images/schaefer770/foto-barco-${String(i + 1).padStart(2, '0')}.png`,
+                            imgAlt: 'Imagem do barco schaefer830',
+                        })),
                         currentSlideIndex: 1,
                         previous() {                
                             if (this.currentSlideIndex > 1) {                    
@@ -710,7 +700,7 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
                                 x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
@@ -724,9 +714,9 @@
 
     <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
         <div class='absolute inset-0 flex items-center justify-between'>
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
 
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
         </div>
 
         <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
@@ -855,14 +845,6 @@
                                 imgSrc: 'https://static.wixstatic.com/media/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg',
                                 imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
                             },                
-                            {                    
-                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
-                            },            
                         ],            
                         currentSlideIndex: 1,
                         previous() {                
@@ -911,7 +893,7 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
                                 x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
@@ -925,9 +907,9 @@
 
     <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
         <div class='absolute inset-0 flex items-center justify-between'>
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
 
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
         </div>
 
         <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
@@ -1050,20 +1032,10 @@
                     </div>
                 </div>
                 <div x-data="{            
-                        slides: [                
-                            {
-                                imgSrc: 'https://static.wixstatic.com/media/76f07b_c42d6f1aa5dd4b41bf15e1072b6da3bf~mv2.jpg/v1/fill/w_788,h_452,al_c,lg_1,q_80,enc_auto/76f07b_c42d6f1aa5dd4b41bf15e1072b6da3bf~mv2.jpg',
-                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
-                            },            
-                        ],            
+                        slides: Array.from({ length: 38 }, (_, i) => ({
+                            imgSrc: `src/images/schaefer660/foto-barco-${String(i + 1).padStart(2, '0')}.png`,
+                            imgAlt: 'Imagem do barco schaefer660',
+                        })),
                         currentSlideIndex: 1,
                         previous() {                
                             if (this.currentSlideIndex > 1) {                    
@@ -1111,7 +1083,7 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
                                 x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
@@ -1125,9 +1097,9 @@
 
     <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
         <div class='absolute inset-0 flex items-center justify-between'>
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
 
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
         </div>
 
         <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
@@ -1248,17 +1220,9 @@
                 <div x-data="{            
                         slides: [                
                             {
-                                imgSrc: 'https://images.unsplash.com/photo-1592437111271-239fa8dcb401?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                imgSrc: 'https://static.wixstatic.com/media/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg/v1/fill/w_980,h_562,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/76f07b_bba7042cffa54c43b1743a617bdc43bd~mv2.jpg',
                                 imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
                             },                
-                            {                    
-                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
-                            },            
                         ],            
                         currentSlideIndex: 1,
                         previous() {                
@@ -1307,7 +1271,7 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
+                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
                                 x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
@@ -1321,9 +1285,9 @@
 
     <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
         <div class='absolute inset-0 flex items-center justify-between'>
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
 
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
         </div>
 
         <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
@@ -1448,20 +1412,10 @@
                     </div>
                 </div>
                 <div x-data="{            
-                        slides: [                
-                            {
-                                imgSrc: 'https://images.unsplash.com/photo-1592437111271-239fa8dcb401?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                                imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://images.unsplash.com/photo-1621277224630-81d9af65e40c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',                
-                            },                
-                            {                    
-                                imgSrc: 'https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',                    
-                                imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',                
-                            },            
-                        ],            
+                        slides: Array.from({ length: 38 }, (_, i) => ({
+                            imgSrc: `src/images/schaefer660/foto-barco-${String(i + 1).padStart(2, '0')}.png`,
+                            imgAlt: 'Imagem do barco schaefer660',
+                        })),
                         currentSlideIndex: 1,
                         previous() {                
                             if (this.currentSlideIndex > 1) {                    
@@ -1523,9 +1477,9 @@
 
     <div class='relative flex w-full items-center justify-center overflow-hidden my-6 py-4'>
         <div class='absolute inset-0 flex items-center justify-between'>
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -ml-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
 
-            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[40%]'></div>
+            <div class='h-full w-[25%] bg-[#133349] -skew-x-12 -mr-3 md:w-[35%] lg:w-[35%] xl:w-[40%]'></div>
         </div>
 
         <h2 class='relative whitespace-nowrap px-4 text-center text-2xl font-bold text-[#133349] md:text-3xl'>
