@@ -45,37 +45,30 @@
                 </div>
 
                 <div class="hidden md:flex items-center space-x-4 mr-32">
-                    <a href="https://www.facebook.com/paulo.sassaki.5" class="text-white hover:text-teal-400 duration-300">
+                    <a href="https://www.facebook.com/paulo.sassaki.5"
+                        class="text-white hover:text-teal-400 duration-300">
                         <i class="fab fa-facebook-f text-xl"></i>
                     </a>
-                    <a href="https://www.instagram.com/paulosassakiyachts/" class="text-white hover:text-teal-400 duration-300">
+                    <a href="https://www.instagram.com/paulosassakiyachts/"
+                        class="text-white hover:text-teal-400 duration-300">
                         <i class="fab fa-instagram text-xl"></i>
                     </a>
                 </div>
 
-                <!-- <button id="menuBtn"
-                    class="flex items-center space-x-2 text-white hover:text-teal-400 transition-colors">
-                    <span class="text-sm font-medium">MENU</span>
-                    <i class="fas fa-bars"></i>
-                </button> -->
-
                 <div x-data="{ modalIsOpen: false }">
                     <button x-on:click="modalIsOpen = true" type="button"
                         class="whitespace-nowrap rounded-md  px-4 py-2 text-white font-medium">
-                         <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars"></i>
                     </button>
 
                     <div x-cloak x-show="modalIsOpen" x-transition.opacity.duration.200ms
-                        x-trap.inert.noscroll="modalIsOpen"
-                        x-on:keydown.esc.window="modalIsOpen = false"
+                        x-trap.inert.noscroll="modalIsOpen" x-on:keydown.esc.window="modalIsOpen = false"
                         x-on:click.self="modalIsOpen = false"
                         class="fixed inset-0 z-30 flex items-center justify-center bg-white/60 backdrop-blur-md p-4"
                         role="dialog" aria-modal="true">
 
-                        <div x-show="modalIsOpen"
-                            x-transition:enter="transition ease-out duration-200"
-                            x-transition:enter-start="opacity-0 scale-90"
-                            x-transition:enter-end="opacity-100 scale-100"
+                        <div x-show="modalIsOpen" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                             class="text-xl rounded-lg shadow-lg w-full max-w-sm p-8 flex flex-col items-center text-[#133349] relative">
 
                             <button x-on:click="modalIsOpen = false" aria-label="Fechar"
@@ -85,19 +78,25 @@
 
                             <nav class="flex flex-col items-center space-y-6 mt-6 border-t border-[#133349]/40 pt-6">
                                 <a href="#barcos" class="hover:text-2xl hover:font-bold duration-300">Início</a>
-                                <a href="https://www.paulosassaki.com.br/paulo-sassaki" class="hover:text-2xl hover:font-bold duration-300">Paulo Sassaki</a>
-                                <a href="https://www.paulosassaki.com.br/embarcacoes" class="hover:text-2xl hover:font-bold duration-300">Embarcações</a>
-                                <a href="https://www.paulosassaki.com.br/contato" class="hover:text-2xl hover:font-bold duration-300">Contatos</a>
-                                <a href="https://www.paulosassaki.com.br/venda" class="hover:text-2xl hover:font-bold duration-300">Venda sua embarcação</a>
+                                <a href="https://www.paulosassaki.com.br/paulo-sassaki"
+                                    class="hover:text-2xl hover:font-bold duration-300">Paulo Sassaki</a>
+                                <a href="https://www.paulosassaki.com.br/embarcacoes"
+                                    class="hover:text-2xl hover:font-bold duration-300">Embarcações</a>
+                                <a href="https://www.paulosassaki.com.br/contato"
+                                    class="hover:text-2xl hover:font-bold duration-300">Contatos</a>
+                                <a href="https://www.paulosassaki.com.br/venda"
+                                    class="hover:text-2xl hover:font-bold duration-300">Venda sua embarcação</a>
 
                                 <div class="w-full border-t border-[#133349]/40 pt-6"></div>
                             </nav>
 
                             <div class="flex space-x-6">
-                                <a href="https://www.facebook.com/paulo.sassaki.5" class="text-[#133349] hover:text-[#3AC8DC] duration-300">
+                                <a href="https://www.facebook.com/paulo.sassaki.5"
+                                    class="text-[#133349] hover:text-[#3AC8DC] duration-300">
                                     <i class="fab fa-facebook-f text-xl"></i>
                                 </a>
-                                <a href="https://www.instagram.com/paulosassakiyachts/" class="text-[#133349] hover:text-[#3AC8DC] duration-300">
+                                <a href="https://www.instagram.com/paulosassakiyachts/"
+                                    class="text-[#133349] hover:text-[#3AC8DC] duration-300">
                                     <i class="fab fa-instagram text-xl"></i>
                                 </a>
                             </div>
@@ -128,9 +127,7 @@
         </div>
     </div>
 
-    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511982050530"
-        target="_blank"
-        role="button"
+    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511982050530" target="_blank" role="button"
         aria-label="Abrir conversa no WhatsApp"
         class="fixed bottom-5 right-5 px-5 sm:px-8 py-3 bg-[#133349] rounded-full flex items-center gap-3 shadow-lg z-50 hover:scale-105 transition-transform duration-300">
 
@@ -139,9 +136,6 @@
         <span class="text-white font-bold hidden sm:block">Posso ajudar?</span>
     </a>
 
-
-
-    <!-- Hero Section -->
     <section class="hero-bg h-96 md:h-[500px] flex items-center justify-center text-white">
         <div class="text-center px-4">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-wider title-shadow-two">
@@ -153,7 +147,6 @@
         </div>
     </section>
 
-    <!-- Boats Section -->
     <section id="barcos" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -176,7 +169,8 @@
                                 <p class="text-[#133349] font-normal">2014</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
-                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho
+                                </p>
                                 <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
@@ -186,7 +180,7 @@
                         </div>
 
                         <a href="#schaefer830"
-                        class="block text-center w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
+                            class="block text-center w-full bg-[#133349] text-white py-3 mt-6 shadow hover:bg-slate-900 transition-colors duration-300 font-medium">
                             Saiba Mais
                         </a>
                     </div>
@@ -211,7 +205,8 @@
                                 <p class="text-[#133349] font-normal">2014</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
-                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho
+                                </p>
                                 <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
@@ -246,7 +241,8 @@
                                 <p class="text-[#133349] font-normal">2014</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
-                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho
+                                </p>
                                 <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
@@ -281,7 +277,8 @@
                                 <p class="text-[#133349] font-normal">2014</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
-                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho
+                                </p>
                                 <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
@@ -316,7 +313,8 @@
                                 <p class="text-[#133349] font-normal">2014</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
-                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho
+                                </p>
                                 <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
@@ -351,7 +349,8 @@
                                 <p class="text-[#133349] font-normal">2014</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
-                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho</p>
+                                <p class="text-[#133349] text-start ml-2 font-normal uppercase tracking-wide">Tamanho
+                                </p>
                                 <p class="text-[#133349] text-start ml-2 font-normal">83 PÉS</p>
                             </div>
                             <div class="border-l-2 border-[#3AC8DC]">
@@ -377,7 +376,8 @@
             <div class="max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-32">
                     <div class="text-center lg:text-end lg:mr-10">
-                        <h2 class="text-xl ml-28 md:text-7xl lg:text-4xl font-bold text-slate-700 leading-none title-shadow">
+                        <h2
+                            class="text-xl ml-28 md:text-7xl lg:text-4xl font-bold text-slate-700 leading-none title-shadow">
                             SCHAEFER<br>
                             <span class="text-slate-800 text-8xl mr-3">830</span>
                         </h2>
@@ -559,8 +559,8 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
-                                x-bind:class="currentSlideIndex === index + 1 
+                            <button class="hidden w-3 h-3 rounded-full transition"
+                                x-on:click="currentSlideIndex = index + 1" x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
                             </button>
@@ -670,7 +670,8 @@
             <div class="max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-28">
                     <div class="text-center lg:text-right lg:pr-8">
-                        <h2 class="text-4xl ml-28 md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
+                        <h2
+                            class="text-4xl ml-28 md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
                             SCHAEFER<br>
                             <span class="text-slate-800 text-8xl mr-10">770</span>
                         </h2>
@@ -755,8 +756,8 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
-                                x-bind:class="currentSlideIndex === index + 1 
+                            <button class="hidden w-3 h-3 rounded-full transition"
+                                x-on:click="currentSlideIndex = index + 1" x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
                             </button>
@@ -866,7 +867,8 @@
             <div class="max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12 mr-28">
                     <div class="text-center lg:text-right lg:pr-8">
-                        <h2 class="text-4xl ml-32 md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
+                        <h2
+                            class="text-4xl ml-32 md:text-7xl lg:text-5xl font-bold text-slate-700 leading-none title-shadow">
                             FERRETTI<br>
                             <span class="text-slate-800 text-8xl mr-12">75</span>
                         </h2>
@@ -948,8 +950,8 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
-                                x-bind:class="currentSlideIndex === index + 1 
+                            <button class="hidden w-3 h-3 rounded-full transition"
+                                x-on:click="currentSlideIndex = index + 1" x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
                             </button>
@@ -1007,8 +1009,10 @@
                                 <li class="pb-2 text-[#133349]">Deslocamento leve: 9.500 kg (20.944 lbs)</li>
                                 <li class="pb-2 text-[#133349]">Ângulo V na popa: 17,4º</li>
                                 <li class="pb-2 text-[#133349]">Capacidade de água doce: 250 L (66 Gal)</li>
-                                <li class="pb-2 text-[#133349]">Capacidade de combustível (motor centro): 800 L (211 Gal)</li>
-                                <li class="pb-2 text-[#133349]">Capacidade de combustível (motor popa): 1050 L (277 Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível (motor centro): 800 L (211
+                                    Gal)</li>
+                                <li class="pb-2 text-[#133349]">Capacidade de combustível (motor popa): 1050 L (277 Gal)
+                                </li>
                                 <li class="pb-2 text-[#133349]">Lotação máxima: 14</li>
                                 <li class="pb-2 text-[#133349]">Lotação noite: 5</li>
                                 <li class="pb-2 text-[#133349]">Designer: Marcio Schaefer</li>
@@ -1138,8 +1142,8 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
-                                x-bind:class="currentSlideIndex === index + 1 
+                            <button class="hidden w-3 h-3 rounded-full transition"
+                                x-on:click="currentSlideIndex = index + 1" x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
                             </button>
@@ -1258,16 +1262,16 @@
                     <div>
                         <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
                             <p class="text-gray-700 leading-relaxed">
-                               A nova Schaefer V33 é um walk-around de 33 pés, contemporâneo e
-                               esportivo, alinhada com o que há de mais moderno nos mercados
-                               americano e europeu, e totalmente adaptada para o Brasil. Com
-                               opção de motor centro rabeta a diesel, ou uma parelha de motores de
-                               popa de 300hp, a Schaefer V33 é uma embarcação que privilegia as
-                               áreas externas, com sua proa aberta e amplo espaço na praça de
-                               popa, sem perder a comodidade de uma cabine para duas pessoas
-                               pernoitarem com conforto. Para curtir com a família, pescar com
-                               amigos, praticar esportes, passar o dia ou o fim de semana, a Schaefer
-                               V33 é um barco pronto para qualquer atividade no mar.
+                                A nova Schaefer V33 é um walk-around de 33 pés, contemporâneo e
+                                esportivo, alinhada com o que há de mais moderno nos mercados
+                                americano e europeu, e totalmente adaptada para o Brasil. Com
+                                opção de motor centro rabeta a diesel, ou uma parelha de motores de
+                                popa de 300hp, a Schaefer V33 é uma embarcação que privilegia as
+                                áreas externas, com sua proa aberta e amplo espaço na praça de
+                                popa, sem perder a comodidade de uma cabine para duas pessoas
+                                pernoitarem com conforto. Para curtir com a família, pescar com
+                                amigos, praticar esportes, passar o dia ou o fim de semana, a Schaefer
+                                V33 é um barco pronto para qualquer atividade no mar.
                             </p>
                         </div>
                     </div>
@@ -1326,8 +1330,8 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
-                                x-bind:class="currentSlideIndex === index + 1 
+                            <button class="hidden w-3 h-3 rounded-full transition"
+                                x-on:click="currentSlideIndex = index + 1" x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
                             </button>
@@ -1446,22 +1450,22 @@
                     <div>
                         <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
                             <p class="text-gray-700 leading-relaxed">
-                               Dizem que nada é perfeito, que o ótimo é inimigo do bom, ou que nada é
-                               tão bom que não possa ser melhorado. Bom, nós entendemos um pouco
-                               diferente.
+                                Dizem que nada é perfeito, que o ótimo é inimigo do bom, ou que nada é
+                                tão bom que não possa ser melhorado. Bom, nós entendemos um pouco
+                                diferente.
                             </p>
                             <p class="text-gray-700 leading-relaxed">
-                               Chegou a nova Schaefer 510 GT, o que já era o melhor barco da categoria,
-                               acabou de ficar melhor ainda. Uma ampla suíte à meia-náu com 1,87m de
-                               pé direito traz o espaço e o conforto que você espera.
+                                Chegou a nova Schaefer 510 GT, o que já era o melhor barco da categoria,
+                                acabou de ficar melhor ainda. Uma ampla suíte à meia-náu com 1,87m de
+                                pé direito traz o espaço e o conforto que você espera.
                             </p>
                             <p class="text-gray-700 leading-relaxed">
-                               Escolha entre 3 suítes, uma ampla sala e uma cozinha extra no deck
-                               inferior da embarcação e sinta a satisfação em seus dias a bordo que
-                               somente uma Schaefer Yachts pode proporcionar.
+                                Escolha entre 3 suítes, uma ampla sala e uma cozinha extra no deck
+                                inferior da embarcação e sinta a satisfação em seus dias a bordo que
+                                somente uma Schaefer Yachts pode proporcionar.
                             </p>
                             <p class="text-gray-700 leading-relaxed">
-                               Conheça a nova Schaefer 510 GT e embarque em um novo padrão de vida bordo.
+                                Conheça a nova Schaefer 510 GT e embarque em um novo padrão de vida bordo.
                             </p>
                         </div>
                     </div>
@@ -1518,8 +1522,8 @@
 
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
                         <template x-for="(slide, index) in slides">
-                            <button class="hidden w-3 h-3 rounded-full transition" x-on:click="currentSlideIndex = index + 1"
-                                x-bind:class="currentSlideIndex === index + 1 
+                            <button class="hidden w-3 h-3 rounded-full transition"
+                                x-on:click="currentSlideIndex = index + 1" x-bind:class="currentSlideIndex === index + 1 
                                             ? 'bg-gray-800' 
                                             : 'bg-gray-400'">
                             </button>
@@ -1614,22 +1618,62 @@
         </div>
     </section>
 
-    <footer class="bg-slate-700 text-white py-8">
-        <div class="max-w-2xl flex justify-between items-center gap-10 mx-auto px-4 text-center">
-            <div class="flex items-center justify-center space-x-2 mb-4">
-                <img src="src/topo_logo.png" alt="logo-tipo" class="w-48">
+    <footer class="bg-[#133349] text-white py-8">
+        <div class="container mx-auto px-4 md:mr-10">
+            <div class="flex flex-wrap justify-center items-center lg:items-start gap-y-8">
+                <div class="w-7/12 sm:w-1/2 lg:w-auto flex justify-center lg:justify-end lg:pr-5">
+                    <img src="src/images/rodape_logo.svg" alt="logo-tipo" class="w-16 md:w-16">
+                </div>
+
+                <div class="hidden lg:flex flex-col h-24 w-0.5">
+                    <div class="h-1/2 bg-cyan-400"></div>
+                    <div class="h-1/2 bg-cyan-400"></div>
+                </div>
+
+                <div class="w-full sm:w-1/2 lg:w-auto flex justify-center px-12">
+                    <div
+                        class="flex flex-col items-center bg-[#0f2a3d] px-8 sm:px-12 md:px-16 py-4 rounded-2xl shadow-lg">
+                        <h3 class="font-bold mb-3 text-xl">Redes Sociais</h3>
+                        <div class="flex space-x-6">
+                            <a href="https://www.facebook.com/paulo.sassaki.5" target="_blank"
+                                class="hover:text-teal-400 transition-colors" aria-label="Facebook">
+                                <i class="fab fa-facebook-f text-2xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/paulosassakiyachts/" target="_blank"
+                                class="hover:text-teal-400 transition-colors" aria-label="Instagram">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511982050530" target="_blank"
+                                class="hover:text-teal-400 transition-colors" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex flex-col h-24 w-0.5">
+                    <div class="h-1/2 bg-cyan-400"></div>
+                    <div class="h-1/2 bg-cyan-400"></div>
+                </div>
+
+                <div
+                    class="w-full lg:w-auto flex flex-col md:flex-row items-center justify-center lg:justify-start lg:pl-5 gap-x-8 gap-y-4">
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                        <h3 class="font-bold mb-1 text-xl">Contato</h3>
+                        <a href="tel:+5511982050530" class="text-base mb-1 hover:text-teal-400 transition-colors">(11)
+                            98205-0530</a>
+                        <a href="mailto:contato@paulosassaki.com.br"
+                            class="flex items-center text-sm hover:text-teal-400 transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>
+                            contato@paulosassaki.com.br
+                        </a>
+                    </div>
+                    <a href="http://equipedigital.com" target="_blank"
+                        class="block w-36 h-8 bg-contain bg-no-repeat bg-center md:mt-12"
+                        style="background-image: url('src/images/rodape_ed_logo.svg');"
+                        aria-label="Desenvolvido por Equipe Digital"></a>
+                </div>
             </div>
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="text-white hover:text-teal-400 transition-colors">
-                    <i class="fab fa-facebook-f text-xl"></i>
-                </a>
-                <a href="#" class="text-white hover:text-teal-400 transition-colors">
-                    <i class="fab fa-instagram text-xl"></i>
-                </a>
-            </div>
-            <p class="text-gray-300 text-sm">
-                © 2024 Paulo Sassaki Yacht Broker. Todos os direitos reservados.
-            </p>
         </div>
     </footer>
 </body>
